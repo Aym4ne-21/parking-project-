@@ -1,7 +1,7 @@
 package parking.refactored;
 
 
-public class CardPayment implements PaymentMethod {
+public class CardPayment implements RefundablePayment {
     private final String lastDigits;
 
     public CardPayment(String lastDigits) { this.lastDigits = lastDigits; }
